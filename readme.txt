@@ -61,4 +61,23 @@ V_1.1
 --------
 features various other currencies.
 New tab called crypto.
+
+-More economy,resources,education,rockets
+-Get a formula for the %'s increase of items that tapers off
+-PHP script for the index file that uses for loops to generate the HTML DOM for the items
+-Store the time since the user last visited in $_SESSIONS[] and give them money based on time passed (cash per second times the seconds the user was away) USE AJAX FOR THIS
+-Clicker upgrades
+-General upgrades
+-Node.js driven IRC like chat to the side maybe
+-More social media options (share score and stuff)
+-Cutscenes for launching rockets
+-Pong(1969) to pass the time (glorious leader likes pong)
+-Newsheadlines either scrollby or fadeIn/Out at top
+-User doesn't see items he can't afford(just the price of the next item above)
+
+-Upgrades in exchange for AUR ?
+
+
+
+
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
