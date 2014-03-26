@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+
+<link href='http://fonts.googleapis.com/css?family=Oswald:400,700|Open+Sans:400' rel='stylesheet' type='text/css'>
+
+<h2>Codename:DRPK ver_1.0</h2>
+<h2>Your progress will be stored locally pressing F5 updates the game</h2>
+
+
+<div class="display">
+
+
+<div class="infowrapper">
+   <div class="satellites"><span id="satellites">200</span><br>US satellites remaining in low earth orbit</div>
+
+    <div class="counters">
+
+        <div class="bigcounter">cash:<br><span>$</span><span id="cash">0</span></div>
+        <div class="perseccounter"><span>$</span><span id="cashsecond">0</span>/per sec</div>
+        
+        <div class="bigcounter">scientists:<br><span id="scientists">0</span></div>
+        <div class="perseccounter">Scientists per sec:<span id="scientistssecond">0</span></div>
+        
+        <div class="bigcounter">resources:<br><span id="resources">0</span></div>
+        <div class="perseccounter">Resources per sec:<span id="resourcessecond">0</span></div>
+
+    </div><!--endofcounters-->
+</div><!--INFO WRAPPER END-->
+ 
+
+
+
+
+    <div class="stats">
+
+    <ul class="nav">
+        <li class="selected">Economy</li>
+        <li>Education</li>
+        <li>Resources</li>
+        <li>Artillery</li>
+    </ul>
+
+        <div class="storeCategory storeCash visable"><!--Buy options for Laborers-->
+
+            <div class="item">
+                <div class="description">
+                <h3><span class="itemName">Item Name</span></h3>
+                <hr>
+                <p><span class="itemDescription">Item Description</span></p>
+                <hr>
+                <p>Cost:<span class="itemCost"> Item Cost</span></p>
+                <p><span class="itemFarms">Item Farms</span>/second:<span class="itemPersec">Item Persec</span></p>
+                <hr>
+                <p>Owned:<span class="itemOwned">Item Owned</span></p>
+                <p>Producing: <span class="itemProduction">Item Production</span>:<span class="itemFarms">Item Farms</span>/sec</p>
+                </div>
+                <input type="hidden" value="Item Farms" name="storecategory" id="storecategory">
+                <input type="hidden" value="Item Varname" name="storeitem" id="storeitem">
+                <button class="buybtn storebtn">BUY</button>
+                <button class="sellbtn storebtn">SELL</button>
+                <!--<button class="killbtn storebtn">KILL</button>-->
+            </div>
+
+            <div class="item">
+                <div class="description">
+                <h3><span class="itemName">Item Name</span></h3>
+                <hr>
+                <p><span class="itemDescription">Item Description</span></p>
+                <hr>
+                <p>Cost:<span class="itemCost"> Item Cost</span></p>
+                <p><span class="itemFarms">Item Farms</span>/second:<span class="itemPersec">Item Persec</span></p>
+                <hr>
+                <p>Owned:<span class="itemOwned">Item Owned</span></p>
+                <p>Producing: <span class="itemProduction">Item Production</span>:<span class="itemFarms">Item Farms</span>/sec</p>
+                </div>
+                <input type="hidden" value="Item Farms" name="storecategory" id="storecategory">
+                <input type="hidden" value="Item Varname" name="storeitem" id="storeitem">
+                <button class="buybtn storebtn">BUY</button>
+                <button class="sellbtn storebtn">SELL</button>
+                <!--<button class="killbtn storebtn">KILL</button>-->
+            </div>
+
+            <div class="item">
+                <div class="description">
+                <h3><span class="itemName">Item Name</span></h3>
+                <hr>
+                <p><span class="itemDescription">Item Description</span></p>
+                <hr>
+                <p>Cost:<span class="itemCost"> Item Cost</span></p>
+                <p><span class="itemFarms">Item Farms</span>/second:<span class="itemPersec">Item Persec</span></p>
+                <hr>
+                <p>Owned:<span class="itemOwned">Item Owned</span></p>
+                <p>Producing: <span class="itemProduction">Item Production</span>:<span class="itemFarms">Item Farms</span>/sec</p>
+                </div>
+                <input type="hidden" value="Item Farms" name="storecategory" id="storecategory">
+                <input type="hidden" value="Item Varname" name="storeitem" id="storeitem">
+                <button class="buybtn storebtn">BUY</button>
+                <button class="sellbtn storebtn">SELL</button>
+                <!--<button class="killbtn storebtn">KILL</button>-->
+            </div>
+
+            <div class="item">
+                <div class="description">
+                <h3><span class="itemName">Item Name</span></h3>
+                <hr>
+                <p><span class="itemDescription">Item Description</span></p>
+                <hr>
+                <p>Cost:<span class="itemCost"> Item Cost</span></p>
+                <p><span class="itemFarms">Item Farms</span>/second:<span class="itemPersec">Item Persec</span></p>
+                <hr>
+                <p>Owned:<span class="itemOwned">Item Owned</span></p>
+                <p>Producing: <span class="itemProduction">Item Production</span>:<span class="itemFarms">Item Farms</span>/sec</p>
+                </div>
+                <input type="hidden" value="Item Farms" name="storecategory" id="storecategory">
+                <input type="hidden" value="Item Varname" name="storeitem" id="storeitem">
+                <button class="buybtn storebtn">BUY</button>
+                <button class="sellbtn storebtn">SELL</button>
+                <!--<button class="killbtn storebtn">KILL</button>-->
+            </div>
+
+            <div class="item">
+                <div class="description">
+                <h3><span class="itemName">Item Name</span></h3>
+                <hr>
+                <p><span class="itemDescription">Item Description</span></p>
+                <hr>
+                <p>Cost:<span class="itemCost"> Item Cost</span></p>
+                <p><span class="itemFarms">Item Farms</span>/second:<span class="itemPersec">Item Persec</span></p>
+                <hr>
+                <p>Owned:<span class="itemOwned">Item Owned</span></p>
+                <p>Producing: <span class="itemProduction">Item Production</span>:<span class="itemFarms">Item Farms</span>/sec</p>
+                </div>
+                <input type="hidden" value="Item Farms" name="storecategory" id="storecategory">
+                <input type="hidden" value="Item Varname" name="storeitem" id="storeitem">
+                <button class="buybtn storebtn">BUY</button>
+                <button class="sellbtn storebtn">SELL</button>
+                <!--<button class="killbtn storebtn">KILL</button>-->
+            </div>
+
+            <div class="item">
+                <div class="description">
+                <h3><span class="itemName">Item Name</span></h3>
+                <hr>
+                <p><span class="itemDescription">Item Description</span></p>
+                <hr>
+                <p>Cost:<span class="itemCost"> Item Cost</span></p>
+                <p><span class="itemFarms">Item Farms</span>/second:<span class="itemPersec">Item Persec</span></p>
+                <hr>
+                <p>Owned:<span class="itemOwned">Item Owned</span></p>
+                <p>Producing: <span class="itemProduction">Item Production</span>:<span class="itemFarms">Item Farms</span>/sec</p>
+                </div>
+                <input type="hidden" value="Item Farms" name="storecategory" id="storecategory">
+                <input type="hidden" value="Item Varname" name="storeitem" id="storeitem">
+                <button class="buybtn storebtn">BUY</button>
+                <button class="sellbtn storebtn">SELL</button>
+                <!--<button class="killbtn storebtn">KILL</button>-->
+            </div>
+
+            <div class="item">
+                <div class="description">
+                <h3><span class="itemName">Item Name</span></h3>
+                <hr>
+                <p><span class="itemDescription">Item Description</span></p>
+                <hr>
+                <p>Cost:<span class="itemCost"> Item Cost</span></p>
+                <p><span class="itemFarms">Item Farms</span>/second:<span class="itemPersec">Item Persec</span></p>
+                <hr>
+                <p>Owned:<span class="itemOwned">Item Owned</span></p>
+                <p>Producing: <span class="itemProduction">Item Production</span>:<span class="itemFarms">Item Farms</span>/sec</p>
+                </div>
+                <input type="hidden" value="Item Farms" name="storecategory" id="storecategory">
+                <input type="hidden" value="Item Varname" name="storeitem" id="storeitem">
+                <button class="buybtn storebtn">BUY</button>
+                <button class="sellbtn storebtn">SELL</button>
+                <!--<button class="killbtn storebtn">KILL</button>-->
+            </div>
+
+            <div class="item">
+                <div class="description">
+                <h3><span class="itemName">Item Name</span></h3>
+                <hr>
+                <p><span class="itemDescription">Item Description</span></p>
+                <hr>
+                <p>Cost:<span class="itemCost"> Item Cost</span></p>
+                <p><span class="itemFarms">Item Farms</span>/second:<span class="itemPersec">Item Persec</span></p>
+                <hr>
+                <p>Owned:<span class="itemOwned">Item Owned</span></p>
+                <p>Producing: <span class="itemProduction">Item Production</span>:<span class="itemFarms">Item Farms</span>/sec</p>
+                </div>
+                <input type="hidden" value="Item Farms" name="storecategory" id="storecategory">
+                <input type="hidden" value="Item Varname" name="storeitem" id="storeitem">
+                <button class="buybtn storebtn">BUY</button>
+                <button class="sellbtn storebtn">SELL</button>
+                <!--<button class="killbtn storebtn">KILL</button>-->
+            </div>
+
+
+        </div><!--endofbuyoption-->
+
+        <div class="storeCategory storeScientists"><!--Buy options for Education-->
+             
+            <div class="item">
+                <div class="description">
+                <h3><span class="itemName">Item Name</span></h3>
+                <hr>
+                <p><span class="itemDescription">Item Description</span></p>
+                <hr>
+                <p>Cost:<span class="itemCost"> Item Cost</span></p>
+                <p><span class="itemFarms">Item Farms</span>/second:<span class="itemPersec">Item Persec</span></p>
+                <hr>
+                <p>Owned:<span class="itemOwned">Item Owned</span></p>
+                <p>Producing: <span class="itemProduction">Item Production</span>:<span class="itemFarms">Item Farms</span>/sec</p>
+                </div>
+                <input type="hidden" value="Item Farms" name="storecategory" id="storecategory">
+                <input type="hidden" value="Item Varname" name="storeitem" id="storeitem">
+                <button class="buybtn storebtn">BUY</button>
+                <button class="sellbtn storebtn">SELL</button>
+                <!--<button class="killbtn storebtn">KILL</button>-->
+            </div>
+            <div class="item">
+                <div class="description">
+                <h3><span class="itemName">Item Name</span></h3>
+                <hr>
+                <p><span class="itemDescription">Item Description</span></p>
+                <hr>
+                <p>Cost:<span class="itemCost"> Item Cost</span></p>
+                <p><span class="itemFarms">Item Farms</span>/second:<span class="itemPersec">Item Persec</span></p>
+                <hr>
+                <p>Owned:<span class="itemOwned">Item Owned</span></p>
+                <p>Producing: <span class="itemProduction">Item Production</span>:<span class="itemFarms">Item Farms</span>/sec</p>
+                </div>
+                <input type="hidden" value="Item Farms" name="storecategory" id="storecategory">
+                <input type="hidden" value="Item Varname" name="storeitem" id="storeitem">
+                <button class="buybtn storebtn">BUY</button>
+                <button class="sellbtn storebtn">SELL</button>
+                <!--<button class="killbtn storebtn">KILL</button>-->
+            </div>
+            <div class="item">
+                <div class="description">
+                <h3><span class="itemName">Item Name</span></h3>
+                <hr>
+                <p><span class="itemDescription">Item Description</span></p>
+                <hr>
+                <p>Cost:<span class="itemCost"> Item Cost</span></p>
+                <p><span class="itemFarms">Item Farms</span>/second:<span class="itemPersec">Item Persec</span></p>
+                <hr>
+                <p>Owned:<span class="itemOwned">Item Owned</span></p>
+                <p>Producing: <span class="itemProduction">Item Production</span>:<span class="itemFarms">Item Farms</span>/sec</p>
+                </div>
+                <input type="hidden" value="Item Farms" name="storecategory" id="storecategory">
+                <input type="hidden" value="Item Varname" name="storeitem" id="storeitem">
+                <button class="buybtn storebtn">BUY</button>
+                <button class="sellbtn storebtn">SELL</button>
+                <!--<button class="killbtn storebtn">KILL</button>-->
+            </div>
+
+        </div><!--endofbuyoption-->
+
+        <div class="storeCategory storeResources"><!--Buy options for Resources-->
+           
+            <div class="item">
+                <div class="description">
+                <h3><span class="itemName">Item Name</span></h3>
+                <hr>
+                <p><span class="itemDescription">Item Description</span></p>
+                <hr>
+                <p>Cost:<span class="itemCost"> Item Cost</span></p>
+                <p><span class="itemFarms">Item Farms</span>/second:<span class="itemPersec">Item Persec</span></p>
+                <hr>
+                <p>Owned:<span class="itemOwned">Item Owned</span></p>
+                <p>Producing: <span class="itemProduction">Item Production</span>:<span class="itemFarms">Item Farms</span>/sec</p>
+                </div>
+                <input type="hidden" value="Item Farms" name="storecategory" id="storecategory">
+                <input type="hidden" value="Item Varname" name="storeitem" id="storeitem">
+                <button class="buybtn storebtn">BUY</button>
+                <button class="sellbtn storebtn">SELL</button>
+                <!--<button class="killbtn storebtn">KILL</button>-->
+            </div>
+            <div class="item">
+                <div class="description">
+                <h3><span class="itemName">Item Name</span></h3>
+                <hr>
+                <p><span class="itemDescription">Item Description</span></p>
+                <hr>
+                <p>Cost:<span class="itemCost"> Item Cost</span></p>
+                <p><span class="itemFarms">Item Farms</span>/second:<span class="itemPersec">Item Persec</span></p>
+                <hr>
+                <p>Owned:<span class="itemOwned">Item Owned</span></p>
+                <p>Producing: <span class="itemProduction">Item Production</span>:<span class="itemFarms">Item Farms</span>/sec</p>
+                </div>
+                <input type="hidden" value="Item Farms" name="storecategory" id="storecategory">
+                <input type="hidden" value="Item Varname" name="storeitem" id="storeitem">
+                <button class="buybtn storebtn">BUY</button>
+                <button class="sellbtn storebtn">SELL</button>
+                <!--<button class="killbtn storebtn">KILL</button>-->
+            </div>
+            <div class="item">
+                <div class="description">
+                <h3><span class="itemName">Item Name</span></h3>
+                <hr>
+                <p><span class="itemDescription">Item Description</span></p>
+                <hr>
+                <p>Cost:<span class="itemCost"> Item Cost</span></p>
+                <p><span class="itemFarms">Item Farms</span>/second:<span class="itemPersec">Item Persec</span></p>
+                <hr>
+                <p>Owned:<span class="itemOwned">Item Owned</span></p>
+                <p>Producing: <span class="itemProduction">Item Production</span>:<span class="itemFarms">Item Farms</span>/sec</p>
+                </div>
+                <input type="hidden" value="Item Farms" name="storecategory" id="storecategory">
+                <input type="hidden" value="Item Varname" name="storeitem" id="storeitem">
+                <button class="buybtn storebtn">BUY</button>
+                <button class="sellbtn storebtn">SELL</button>
+                <!--<button class="killbtn storebtn">KILL</button>-->
+            </div>
+
+        </div><!--endofbuyoption-->
+
+        <div class="storeCategory rocketstore"> 
+    
+            <div class="item">
+
+                <img src="img/rocket.png" class="rocketglyph">
+
+                <div class="description">
+
+                <h1><span class="itemName">Item Name</span></h1>
+                <hr>
+                <p><span class="itemDescription">Item Description</span></p>
+                <hr>
+
+                <p>Rocket Range:<span class="itemRange">Item Range</span></p>
+                <hr>
+
+                <div class="rocketCost">
+                <h3>Rocket Cost:</h3>
+                <p>Cash:<span class="costCash"> CashCost</span></p>
+                <p>Scientists:<span class="costScientists"> CashCost</span></p>
+                <p>Resources:<span class="costResources"> CashCost</span></p>
+                </div><!--Rocket cost breakdown-->
+
+                </div><!--Description END-->
+
+                <input type="hidden" value="Item Farms" name="storecategory" id="storecategory">
+                <input type="hidden" value="Item Varname" name="rocketid" id="rocketid">
+
+                <button class="launchbtn">LAUNCH!</button>
+                <!--<button class="killbtn storebtn">KILL</button>-->
+            </div> <!--ITEM END-->
+
+            <div class="item">
+
+                <img src="img/rocket.png" class="rocketglyph">
+
+                <div class="description">
+
+                <h1><span class="itemName">Item Name</span></h1>
+                <hr>
+                <p><span class="itemDescription">Item Description</span></p>
+                <hr>
+
+                <p>Rocket Range:<span class="itemRange">Item Range</span></p>
+                <hr>
+
+                <div class="rocketCost">
+                <h3>Rocket Cost:</h3>
+                <p>Cash:<span class="costCash"> CashCost</span></p>
+                <p>Scientists:<span class="costScientists"> CashCost</span></p>
+                <p>Resources:<span class="costResources"> CashCost</span></p>
+                </div><!--Rocket cost breakdown-->
+
+                </div><!--Description END-->
+
+                <input type="hidden" value="Item Farms" name="storecategory" id="storecategory">
+                <input type="hidden" value="Item Varname" name="rocketid" id="rocketid">
+
+                <button class="launchbtn">LAUNCH!</button>
+                <!--<button class="killbtn storebtn">KILL</button>-->
+            </div> <!--ITEM END-->
+
+            <div class="item">
+
+                <img src="img/rocket.png" class="rocketglyph">
+
+                <div class="description">
+
+                <h1><span class="itemName">Item Name</span></h1>
+                <hr>
+                <p><span class="itemDescription">Item Description</span></p>
+                <hr>
+
+                <p>Rocket Range:<span class="itemRange">Item Range</span></p>
+                <hr>
+
+                <div class="rocketCost">
+                <h3>Rocket Cost:</h3>
+                <p>Cash:<span class="costCash"> CashCost</span></p>
+                <p>Scientists:<span class="costScientists"> CashCost</span></p>
+                <p>Resources:<span class="costResources"> CashCost</span></p>
+                </div><!--Rocket cost breakdown-->
+
+                </div><!--Description END-->
+
+                <input type="hidden" value="Item Farms" name="storecategory" id="storecategory">
+                <input type="hidden" value="Item Varname" name="rocketid" id="rocketid">
+
+                <button class="launchbtn">LAUNCH!</button>
+                <!--<button class="killbtn storebtn">KILL</button>-->
+            </div> <!--ITEM END-->
+
+        </div><!--ROCKETSTORE END-->
+
+
+    </div><!--endofstats-->
+
+
+
+
+
+<div class="clickerwrapper">
+    <button class="manuallabor">Click Here</button>
+
+    <!--<div class="clickerstore">
+        
+    CLICKER
+
+    </div>-->
+</div>
+
+
+
+
+
+</div><!--DISPLAY END-->
+
+
+<div class="horline">
+
+<button id="flushdatabtn">Flush local data (DEVELOPERS BUTTON)</button>
+<p>Help support this by donating bitcoins to: <b>1Ap9NZ3VoKof52E2rcr5G9Zaa9THo5LqcX</b></p>
+<p>Or help support this by donating dogecoins to: <b>DQfhgRRN6aw6B2V5ygp4XwP9aCHSbA3WEp</b></p>
+
+</div>
+<!--<form type="post" action="php/comment.php">
+    <input type="text" name="name" placeholder="Full name"><br>
+    <textarea name="comment" placeholder="Idea or suggestion"></textarea><br>
+    <input type="submit" value="Leave an idea or comment">
+</form>-->
+
+
+
+
+
+
+
+        <script src="js/vendor/jquery-1.10.2.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/json2.js"></script>
+        <script src="js/jstorage.js"></script>
+
+        <script src="js/main.js"></script>
+        <script src="js/game.js"></script>
+        
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-40622926-2', 'tagl.is');
+  ga('send', 'pageview');
+
+</script>
+
+    </body>
+</html>

@@ -1,0 +1,5 @@
+Logs made by siggi
+2.12.13
+*changed the clicker to a button
+*changed the text on the windfarm
+*added footer

@@ -1,0 +1,724 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+*{/*For all things in the css*/
+/*  ===================================================================================
+    this is so you can't copy text and also fixes problem with the button for the store
+    ===================================================================================*/
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+
+}
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height:1;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #000;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+
+body{
+    width:960px;
+    margin:0 auto;
+    padding:0;
+
+    background-color: #C4C4C4;
+}
+
+/*
+font-family: 'Oswald', sans-serif;
+font-family: 'Open Sans Condensed', sans-serif;
+*/
+
+/*********************************
+            TEXT STYLES
+*********************************/
+
+.item{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+.storebtn{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+.item h1{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    margin:0;
+    padding:0;
+}
+.item h3{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+
+}
+.item h4{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    margin:0;
+    padding:0;
+    
+}
+.launchbtn{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.rocketstore .description{
+    text-align: left;
+}
+.rocketstore .rocketCost p{
+    float:left;
+    display:inline-block;
+    width:calc(100%/3);
+
+    margin:0;
+    padding:0;
+}
+.rocketstore .rocketCost h3{
+    margin:0;
+    padding:0;
+}
+
+.counters{
+
+}
+.perseccounter{
+}
+.horline{
+    display:block;
+    float:left;
+    width:100%;
+    margin-top:1em;
+    height:auto;
+}
+
+
+/*********************************
+         END TEXT STYLES
+*********************************/
+
+/*********************************
+            Game looks
+*********************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*********************************
+            END game looks
+*********************************/
+
+
+
+
+
+
+/* main container for the game and everything in it */
+.display{
+    float:left;
+    width:calc(100% - 2em);
+    height:auto;
+    margin:0 1em;
+    padding:1em;
+
+    background-color: #E0E8F5;
+    box-shadow: 5px 5px 0px #1B4C50;
+}
+
+/*INSTRUCTIONS*/
+.instructions{
+    float:left;
+    width:100%;
+    height:3em;
+
+    padding:0 1em;
+
+    background-color: #DAA;
+
+}
+.instructions:hover{
+    height:auto;
+}
+/*GAME INFO*/
+.stats{
+    float:left;
+    width:62%;
+
+}
+.stats>.nav{
+
+width:100%;
+height:2em;
+padding:0;
+margin:0;
+list-style: none;
+
+background-color:#6EA5CF;
+}
+.stats>.nav>li{
+    float:left;
+    width:25%;
+    display:block;
+
+    height:100%;
+    font-size:1.4em;
+
+    text-align: center;
+    list-style: none;
+
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+}
+.stats>.nav>.selected{
+    background-color:#5B95C8;
+}
+
+
+
+
+
+.storeCategory {
+    float:left;
+    width:calc(100% );
+    height:26em;
+
+    padding:0.25em;
+
+    overflow:scroll;
+    overflow-x:hidden;
+
+    background-color: #5B95C8;
+}
+.item{
+    float:left;
+    display:inline-block;
+    width:100%;
+    height:auto;    
+
+
+    margin:0.25em 0;
+    padding:0.125em;
+
+    border:1px solid #000;
+    background-color:#D7E4EA;
+}
+.item>.description{
+    float:left;
+    width:100%;
+    height:100%;
+
+    border-bottom:1px dashed #000;  
+}
+
+.storebtn{
+    float:left;
+    width:calc(100% / 2);
+
+    padding:0;
+    font-size: 2em;
+
+    border:0;
+}
+.storebtn:active{
+    -webkit-box-shadow:inset 0 0px 4px 1px rgba(0,0,0,0.6);
+    box-shadow:inset 0 0px 4px 1px rgba(0,0,0,0.6);
+}
+.buybtn{
+ background-color: #69C85B;
+}
+.sellbtn{
+ background-color: #C67553;
+}
+
+
+.description>p{
+    padding:0;
+    margin:0;
+}
+.description>h3{
+    padding:0;
+    margin:0;
+}
+.description hr{
+    width:100%;
+    height:1px;
+    border:0;
+    background:#444;
+    margin:1px 0;
+    padding:0;
+    color: #333;
+}
+
+
+
+
+
+.infowrapper{
+    width:38%;
+    height:100%;
+    float:left;
+
+    color:#000;
+}
+
+.counters{
+    float:left;
+    width:100%;
+
+    color:inherit;
+    background-color: inherit;
+}
+.counters>div{
+    float:left;
+    width:100%;
+
+    text-align: center;
+
+}
+.counters>.perseccounter{
+    margin-bottom:1.2em;
+}
+.counters>.bigcounter{
+    font-size:1.5em;
+}
+.counters>.bigcounter>span{
+    font-size:2em;
+}
+
+
+/*CSS FOR THE SATELLITE COUNTER*/
+.satellites{
+    float:left;
+    width:100%;
+    margin:0;
+
+    font-size: 1.3em;
+
+    text-align: center;
+
+    color:inherit;
+    background-color: inherit;
+    border-bottom:1px solid #000;
+
+}
+.satellites>span{
+    font-size:8em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.clickerwrapper{
+    width:62%;
+    float:left;
+}
+.manuallabor{
+    width:100%;
+    float:left;
+    margin:0;
+    padding:0;
+    font-size: 4em;
+    font-weight: 700;
+    text-align:center;
+}
+.clickerstore{
+    width:100%;
+    height:1em;
+    float:left;
+    font-size: 4em;
+    font-weight: 700;
+    background-color: #BBB;
+    text-align:center;
+    border: 0px;
+}
+
+
+
+
+
+
+
+
+.rocketstore{
+    height:26em;
+    float:left;
+    font-weight: 700;
+    text-align:center;
+    border: 0px;
+}
+
+
+.rocketstore .item{
+    float:left;
+    display:inline-block;
+    width:100%;
+    height:auto;    
+
+
+    margin:0.25em 0;
+    padding:0.125em;
+
+    border:1px solid #000;
+
+}
+.rocketglyph{
+    display:block;
+    float:left;
+}
+.rocketstore .item .description{
+    float:left;
+    width:calc(100% - 128px);
+    height:100%;
+
+    border-bottom:1px dashed #000;  
+}
+
+.launchbtn{
+    float:left;
+    width:calc(100%);
+
+    padding:0;
+    font-size: 2em;
+    text-shadow:1px 1px 0px #FFF;
+    background-color: #339935;
+    border:0;
+}
+.launchbtn:active{
+    -webkit-box-shadow:inset 0 0px 4px 1px rgba(0,0,0,0.6);
+    box-shadow:inset 0 0px 4px 1px rgba(0,0,0,0.6);
+    background-color: #BA2103;
+}
+
+
+.rocketstore .description>p{
+    padding:0;
+    margin:0;
+}
+.rocketstore .description>h3{
+    padding:0;
+    margin:0;
+}
+.rocketstore .description hr{
+    width:100%;
+    height:1px;
+    border:0;
+    background:#444;
+    margin:1px 0;
+    padding:0;
+    color: #333;
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
