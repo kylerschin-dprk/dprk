@@ -29,24 +29,24 @@ function storeItemConstructor(varname,name,description,owned,farms,persec,cost,m
 }
 
 //cash farms
-var prisoner = new storeItemConstructor("prisoner","Political prisoner","A prisoner from the country's top deathcamp, will work like his life depends on it.",0,"cash",0.5,100,100,1.15);
-var laborer = new storeItemConstructor("laborer","Basic laborer","A previously convicted Korean citizen, doesn't cost much but will work hard for his family back in Pyongyang.",0,"cash",1,250,250,1.15);
-var worker = new storeItemConstructor("worker","Paid worker","Costs a bit more but he seems to work harder and at least you don't have to worry about holding his family.",0,"cash",4,650,650,1.15);
-var farmer = new storeItemConstructor("farmer","Farmer","Lured in by the promise of slave labor he finds that the North Korean agriculture is not what he expected.",0,"cash",16,1700,1700,1.15);
+var prisoner = new storeItemConstructor("prisoner","Political prisoner","A prisoner from the country's top deathcamp, will work like his life depends on it.",0,"cash",0.5,100,100,1.078);
+var laborer = new storeItemConstructor("laborer","Basic laborer","A previously convicted Korean citizen, doesn't cost much but will work hard for his family back in Pyongyang.",0,"cash",1,250,250,1.078);
+var worker = new storeItemConstructor("worker","Paid worker","Costs a bit more but he seems to work harder and at least you don't have to worry about holding his family.",0,"cash",4,650,650,1.078);
+var farmer = new storeItemConstructor("farmer","Farmer","Lured in by the promise of slave labor he finds that the North Korean agriculture is not what he expected.",0,"cash",16,1700,1700,1.078);
 var bitcoin = new storeItemConstructor("bitcoin","Bitcoin mining rig","According to your programmers, this is the currency of the future... or so they say.",0,"cash",0.001,1,1,1.0015);
-var airport = new storeItemConstructor("airport","Airport","The North Korean tourism business is BOOMING, although its mostly those guys from VICE magazine.",0,"cash",32,5600,5600,1.15);
-var methlab = new storeItemConstructor("methlab","Methlab","Kim Jong White's blue meth is number #1 blue meth according to 4 out of 5 VICE magazine editors.",0,"cash",56,9800,9800,1.15);
-var concentrationcamp = new storeItemConstructor("concentrationcamp","Concentration camp","A place political prisoners and traitors to the cause are sent to have their opinions 'reformed'.",0,"cash",512,270000,270000,1.15);
+var airport = new storeItemConstructor("airport","Airport","The North Korean tourism business is BOOMING, although its mostly those guys from VICE magazine.",0,"cash",32,5600,5600,1.078);
+var methlab = new storeItemConstructor("methlab","Methlab","Kim Jong White's blue meth is number #1 blue meth according to 4 out of 5 VICE magazine editors.",0,"cash",56,9800,9800,1.078);
+var concentrationcamp = new storeItemConstructor("concentrationcamp","Concentration camp","A place political prisoners and traitors to the cause are sent to have their opinions 'reformed'.",0,"cash",512,270000,270000,1.078);
 
 //science farms
-var kindergarden = new storeItemConstructor("kindergarden","Kindergarden","Feeds children propaganda from birth and raises them to honor the supreme leader and his rocket program.",0,"scientists",0.2,800,800,1.15);
-var college = new storeItemConstructor("college","College","North Korea college was voted #1 college in all of countries!",0,"scientists",2,12000,12000,1.15);
-var university = new storeItemConstructor("university","University","A place where people can further their education in either rocket science or physics.",0,"scientists",4,24000,24000,1.15);
+var kindergarden = new storeItemConstructor("kindergarden","Kindergarden","Feeds children propaganda from birth and raises them to honor the supreme leader and his rocket program.",0,"scientists",0.2,800,800,1.078);
+var college = new storeItemConstructor("college","College","North Korea college was voted #1 college in all of countries!",0,"scientists",2,12000,12000,1.078);
+var university = new storeItemConstructor("university","University","A place where people can further their education in either rocket science or physics.",0,"scientists",4,24000,24000,1.078);
 
 //resource farmers
-var windfarm = new storeItemConstructor("windfarm","Windfarm","Now you're stealing the wind from false Korea, good job, glorious Leader will not be dissapointed in your actions.",0,"resources",10,10000,10000,1.15);
-var mine = new storeItemConstructor("mine","Mine","Provides resources using err... 'volunteer workers'.",0,"resources",40,50000,50000,1.15);
-var oilrig = new storeItemConstructor("oilrig","Offshore oil rig","Hard to build since it's off shore but at least you need not threaten any families.",0,"resources",120,100000,100000,1.15);
+var windfarm = new storeItemConstructor("windfarm","Windfarm","Now you're stealing the wind from false Korea, good job, glorious Leader will not be dissapointed in your actions.",0,"resources",10,10000,10000,1.078);
+var mine = new storeItemConstructor("mine","Mine","Provides resources using err... 'volunteer workers'.",0,"resources",40,50000,50000,1.078);
+var oilrig = new storeItemConstructor("oilrig","Offshore oil rig","Hard to build since it's off shore but at least you need not threaten any families.",0,"resources",120,100000,100000,1.078);
 
 //array of all the cash farmers/science farms/resource farmers (left to right in ascending order of expense)
 var farmers = [[prisoner,laborer,worker,farmer,bitcoin,airport,methlab,concentrationcamp],[kindergarden,college,university],[windfarm,mine,oilrig]];
