@@ -13,6 +13,7 @@
 *{/*For all things in the css*/
 /*  ===================================================================================
     this is so you can't copy text and also fixes problem with the button for the store
+    but then you can't copy the wallet address, or anything really
     ===================================================================================*/
     -webkit-user-select: none;  /* Chrome all / Safari all */
     -moz-user-select: none;     /* Firefox all */
