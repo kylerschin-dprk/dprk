@@ -29,14 +29,15 @@ function storeItemConstructor(varname,name,description,owned,farms,persec,cost,m
 }
 
 //cash farms
-var prisoner = new storeItemConstructor("prisoner","Political prisoner","A prisoner from the country's top deathcamp, will work like his life depends on it.",0,"cash",0.5,100,100,1.078);
-var laborer = new storeItemConstructor("laborer","Basic laborer","A previously convicted Korean citizen, doesn't cost much but will work hard for his family back in Pyongyang.",0,"cash",1,250,250,1.078);
-var worker = new storeItemConstructor("worker","Paid worker","Costs a bit more but he seems to work harder and at least you don't have to worry about holding his family.",0,"cash",4,650,650,1.078);
-var farmer = new storeItemConstructor("farmer","Farmer","Lured in by the promise of slave labor he finds that the North Korean agriculture is not what he expected.",0,"cash",16,1700,1700,1.078);
+var nba = new storeItemConstructor("nba","NBA players",'Since Dennis Rodman first came to True Korea the government has been kidnapping various NBA players to "work" for our glorious Leader, they shoot the hoops for cash!',0,"cash",1,5,5,1.078);
+var prisoner = new storeItemConstructor("prisoner","Political prisoner","A prisoner from the country's top deathcamp, will work like his life depends on it.",0,"cash",10,100,100,1.078);
+var laborer = new storeItemConstructor("laborer","Basic laborer","A previously convicted Korean citizen, doesn't cost much but will work hard for his family back in Pyongyang.",0,"cash",18,250,250,1.078);
+var worker = new storeItemConstructor("worker","Paid worker","Costs a bit more but he seems to work harder and at least you don't have to worry about holding his family.",0,"cash",40,650,650,1.078);
+var farmer = new storeItemConstructor("farmer","Farmer","Lured in by the promise of slave labor he finds that the North Korean agriculture is not what he expected.",0,"cash",100,1700,1700,1.078);
 var bitcoin = new storeItemConstructor("bitcoin","Bitcoin mining rig","According to your programmers, this is the currency of the future... or so they say.",0,"cash",0.001,1,1,1.0015);
-var airport = new storeItemConstructor("airport","Airport","The North Korean tourism business is BOOMING, although its mostly those guys from VICE magazine.",0,"cash",32,5600,5600,1.078);
-var methlab = new storeItemConstructor("methlab","Methlab","Kim Jong White's blue meth is number #1 blue meth according to 4 out of 5 VICE magazine editors.",0,"cash",56,9800,9800,1.078);
-var concentrationcamp = new storeItemConstructor("concentrationcamp","Concentration camp","A place political prisoners and traitors to the cause are sent to have their opinions 'reformed'.",0,"cash",512,270000,270000,1.078);
+var airport = new storeItemConstructor("airport","Airport","The North Korean tourism business is BOOMING, although its mostly those guys from VICE magazine.",0,"cash",320,5600,5600,1.078);
+var methlab = new storeItemConstructor("methlab","Methlab","Kim Jong White's blue meth is number #1 blue meth according to 4 out of 5 VICE magazine editors.",0,"cash",600,9800,9800,1.078);
+var concentrationcamp = new storeItemConstructor("concentrationcamp","Concentration camp","A place political prisoners and traitors to the cause are sent to have their opinions 'reformed'.",0,"cash",1000,270000,270000,1.078);
 
 //science farms
 var kindergarden = new storeItemConstructor("kindergarden","Kindergarden","Feeds children propaganda from birth and raises them to honor the supreme leader and his rocket program.",0,"scientists",0.2,800,800,1.078);
@@ -49,7 +50,7 @@ var mine = new storeItemConstructor("mine","Mine","Provides resources using err.
 var oilrig = new storeItemConstructor("oilrig","Offshore oil rig","Hard to build since it's off shore but at least you need not threaten any families.",0,"resources",120,100000,100000,1.078);
 
 //array of all the cash farmers/science farms/resource farmers (left to right in ascending order of expense)
-var farmers = [[prisoner,laborer,worker,farmer,bitcoin,airport,methlab,concentrationcamp],[kindergarden,college,university],[windfarm,mine,oilrig]];
+var farmers = [[nba,prisoner,laborer,worker,farmer,bitcoin,airport,methlab,concentrationcamp],[kindergarden,college,university],[windfarm,mine,oilrig]];
 
 /******************************************
 	ROCKET OBJECTS/CONSTRUCTOR - GLOBAL
